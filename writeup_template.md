@@ -84,10 +84,7 @@ It does color transformation, sclaes the imahge based on input, (sclaes less tha
 
 we then calculate the numnber of blocks and follow the cells to step (2 out of 8), so a overlap of 75%
 
-![alt text][image5]
-![alt text][image6]
-![alt text][image7]
-![alt text][image8]
+
 
 #### 2. Show some examples of test images to demonstrate how your pipeline is working.  What did you do to optimize the performance of your classifier?
 
@@ -116,12 +113,15 @@ Here's an example result showing the heatmap from a series of frames of video, t
 ### Here are six frames and their corresponding heatmaps:
 
 ![alt text][image5]
-
-### Here is the output of `scipy.ndimage.measurements.label()` on the integrated heatmap from all six frames:
 ![alt text][image6]
 
-### Here the resulting bounding boxes are drawn onto the last frame in the series:
+
+
+### Here is the output of `scipy.ndimage.measurements.label()` on the integrated heatmap from all six frames:
 ![alt text][image7]
+
+### Here the resulting bounding boxes are drawn onto the last frame in the series:
+!![alt text][image8]
 
 
 
