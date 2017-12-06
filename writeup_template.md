@@ -134,5 +134,10 @@ Here's an example result showing the heatmap from a series of frames of video, t
 
 #### 1. Briefly discuss any problems / issues you faced in your implementation of this project.  Where will your pipeline likely fail?  What could you do to make it more robust?
 
+
+I can make this more robust, current I am only using HOG. I can augment the features set by adding 
+ binned color features, as well as histograms of color. This would result in better accuracy and robustness, i.e. with shadows. I could also have come up with a better thrshold formula to avoid outliers
+ 
+The pipeline with likely fails if the car is making a lane change and also if this was a 2 way traffic road without a median divider (oncoming traffic will have a bigger image footprint and outlier may not be weeded out correctly)
 Here I'll talk about the approach I took, what techniques I used, what worked and why, where the pipeline might fail and how I might improve it if I were going to pursue this project further.  
 
