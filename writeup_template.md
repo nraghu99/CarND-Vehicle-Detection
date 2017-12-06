@@ -22,13 +22,13 @@ The goals / steps of this project are the following:
 [image5]: ./test_images/test1.jpg
 [image6]: ./project_images/test1_with_rects.jpg
 [image7]: ./project_images/test1_heatmap.jpg
-[image7]: ./project_images/test1_heatmap_with_threshold.jpg
-[image7]: ./project_images/test1_with_bboxes.jpg
-[image8]: ./project_images/test2_with_bboxes.jpg
-[image9]: ./project_images/test3_with_bboxes.jpg
-[image10]: ./project_images/test4_with_bboxes.jpg
-[image11]: ./project_images/test5_with_bboxes.jpg
-[image12]: ./project_images/test6_with_bboxes.jpg
+[image8]: ./project_images/test1_heatmap_with_threshold.jpg
+[image9]: ./project_images/test1_with_bboxes.jpg
+[image10]: ./project_images/test2_with_bboxes.jpg
+[image11]: ./project_images/test3_with_bboxes.jpg
+[image12]: ./project_images/test4_with_bboxes.jpg
+[image13]: ./project_images/test5_with_bboxes.jpg
+[image14]: ./project_images/test6_with_bboxes.jpg
 [video1]: ./project_video_out.mp4
 
 ## [Rubric](https://review.udacity.com/#!/rubrics/513/view) Points
@@ -72,21 +72,34 @@ HOG channels = ALL or 1,2,3
 
 #### 3. Describe how (and identify where in your code) you trained a classifier using your selected HOG features (and color features if you used them).
 
-I trained a linear SVM using...
+I trained a linear SVM in cell block 8
 
 ### Sliding Window Search
 
 #### 1. Describe how (and identify where in your code) you implemented a sliding window search.  How did you decide what scales to search and how much to overlap windows?
 
-I decided to search random window positions at random scales all over the image and came up with this (ok just kidding I didn't actually ;):
+I am doing sliding window search as part of findcars in cell  number 9. findcars function adapted from the lesson takes in the y and x start and stop position to search and the colorspace, hog channel, the trained classifier svc, scale ,
+orientation, pixels per cell and cells per block
 
-![alt text][image3]
+It does color transformation, sclaes the imahge based on input, (sclaes less than 1 result in some many outliers as the image is tiny to produce distinguishable HOG)
+
+we then calculate the numnber of blocks and follow the cells to step (2 out of 8), so a overlap of 75%
+
+![alt text][image5]
+![alt text][image6]
+![alt text][image7]
+![alt text][image8]
 
 #### 2. Show some examples of test images to demonstrate how your pipeline is working.  What did you do to optimize the performance of your classifier?
 
 Ultimately I searched on two scales using YCrCb 3-channel HOG features plus spatially binned color and histograms of color in the feature vector, which provided a nice result.  Here are some example images:
 
-![alt text][image4]
+![alt text][image9]
+![alt text][image10]
+![alt text][image11]
+![alt text][image12]
+![alt text][image13]
+![alt text][image14]
 ---
 
 ### Video Implementation
