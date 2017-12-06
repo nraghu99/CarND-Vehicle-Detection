@@ -25,10 +25,9 @@ The goals / steps of this project are the following:
 [image8]: ./project_images/test1_heatmap_with_threshold.jpg
 [image9]: ./project_images/test1_with_bboxes.jpg
 [image10]: ./project_images/test2_with_bboxes.jpg
-[image11]: ./project_images/test3_with_bboxes.jpg
-[image12]: ./project_images/test4_with_bboxes.jpg
-[image13]: ./project_images/test5_with_bboxes.jpg
-[image14]: ./project_images/test6_with_bboxes.jpg
+[image11]: ./project_images/test4_with_bboxes.jpg
+[image12]: ./project_images/test5_with_bboxes.jpg
+[image13]: ./project_images/test6_with_bboxes.jpg
 [video1]: ./project_video_out.mp4
 
 ## [Rubric](https://review.udacity.com/#!/rubrics/513/view) Points
@@ -99,7 +98,7 @@ Ultimately I searched on two scales using YCrCb 3-channel HOG features plus spat
 ![alt text][image11]
 ![alt text][image12]
 ![alt text][image13]
-![alt text][image14]
+
 ---
 
 ### Video Implementation
