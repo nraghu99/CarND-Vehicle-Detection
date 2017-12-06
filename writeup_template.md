@@ -19,10 +19,17 @@ The goals / steps of this project are the following:
 [image2]: ./project_images/sample_noncar_image.jpg
 [image3]: ./project_images/sample_car_hog_image.jpg
 [image4]: ./project_images/sample_noncar_hog_image.jpg
-[image5]: ./examples/bboxes_and_heat.png
-[image6]: ./examples/labels_map.png
-[image7]: ./examples/output_bboxes.png
-[video1]: ./project_video.mp4
+[image5]: ./test_images/test1.jpg
+[image6]: ./project_images/test1_with_rects.jpg
+[image7]: ./project_images/test1_heatmap.jpg
+[image7]: ./project_images/test1_heatmap_with_threshold.jpg
+[image7]: ./project_images/test1_with_bboxes.jpg
+[image8]: ./project_images/test2_with_bboxes.jpg
+[image9]: ./project_images/test3_with_bboxes.jpg
+[image10]: ./project_images/test4_with_bboxes.jpg
+[image11]: ./project_images/test5_with_bboxes.jpg
+[image12]: ./project_images/test6_with_bboxes.jpg
+[video1]: ./project_video_out.mp4
 
 ## [Rubric](https://review.udacity.com/#!/rubrics/513/view) Points
 ### Here I will consider the rubric points individually and describe how I addressed each point in my implementation.  
