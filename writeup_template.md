@@ -50,17 +50,25 @@ The code for this step is contained in the first code cell of the IPython notebo
 I started by reading in all the `vehicle` and `non-vehicle` images.  Here is an example of one of each of the `vehicle` and `non-vehicle` classes:
 
 ![alt text][image1]
+![alt text][image2]
 
 I then explored different color spaces and different `skimage.hog()` parameters (`orientations`, `pixels_per_cell`, and `cells_per_block`).  I grabbed random images from each of the two classes and displayed them to get a feel for what the `skimage.hog()` output looks like.
 
-Here is an example using the `YCrCb` color space and HOG parameters of `orientations=8`, `pixels_per_cell=(8, 8)` and `cells_per_block=(2, 2)`:
+Here is an example using  HOG parameters of `orientations=9`, `pixels_per_cell=(8, 8)` and `cells_per_block=(2,2)`:
 
 
-![alt text][image2]
+![alt text][image3]
+![alt text][image4]
 
 #### 2. Explain how you settled on your final choice of HOG parameters.
 
-I tried various combinations of parameters and...
+I tried various combinations of parameters , color space , orientations and pixels per cell and cells per block and HOG channels. The combinations wre 
+orientations  = 6,7,9,11 and 12
+color space tried = RGB, HSV, LUV, HLS, YUV, YCrCb
+pixels per cell = 4,8,12, and 16
+cells per block =  1, 2 and 3
+HOG channels = ALL or 1,2,3
+
 
 #### 3. Describe how (and identify where in your code) you trained a classifier using your selected HOG features (and color features if you used them).
 
